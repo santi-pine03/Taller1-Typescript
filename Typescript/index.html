@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <head>
+        <style>
+            .custom-navbar {
+                background-color: #009da6; 
+            }
+            .table-container {
+                max-width: 450px; 
+                margin-left: 0; 
+                margin-top: 20px;
+            }
+            .bold-column {
+                font-weight: bold;
+            }
+            .blue-name {
+                color: #007bff; 
+            }
+            tbody tr {
+                background-color: rgb(222, 222, 222); 
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+            <a class="navbar-brand" href="#" style="color: black;">TV Series</a>
+        </nav>
+    </body>
+    <div class="container">
+        <div class="row">
+            <div class="col table-container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="seriesTabla">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div> 
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./dataSeries.js"></script>
+    <script type="module" src="./Serie.js"></script>
+</body>
+</html>
