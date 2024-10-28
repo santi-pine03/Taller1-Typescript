@@ -23,7 +23,7 @@ function calculateAverageSeasons(series) {
 }
 
 function displayAverage(series) {
-    const average = calculateAverageSeasons(series).toFixed(2);
+    const average = Math.round(calculateAverageSeasons(series)); 
     const averageRow = document.createElement("tr");
     averageRow.style.backgroundColor = "white";
     averageRow.innerHTML = `<td colspan="3" class="bold-column">Seasons average: ${average}</td>`;
